@@ -1,25 +1,37 @@
 # Parental Advisory Logo Adder
 
-A Python GUI application that adds parental advisory explicit logos to album covers in a user-selected folder.
+A Python GUI application that adds parental advisory explicit logos to album covers and images. Features a clean, modern interface with live preview and batch processing capabilities.
 
-## Features
+## ✨ Features
 
-- **Three positioning options**: Bottom Left, Bottom Middle, Bottom Right
-- **Adjustable logo size**: 50-200 pixels
-- **Live preview**: See how the logo will appear before processing
-- **Batch processing**: Process multiple images at once
-- **Automatic backup**: Original files are backed up with '_original' suffix
-- **Modern light UI**: Clean and intuitive interface
+- **Multiple positioning options**: Bottom Left, Bottom Middle, Bottom Right
+- **Adjustable logo size**: 50-200 pixels with real-time preview
+- **Live preview**: See exactly how the logo will appear before processing
+- **Batch processing**: Process multiple images at once with progress tracking
+- **Crop modes**: Choose between "Crop to Center" or "Stretch to Square"
+- **Transparency support**: Preserves transparency in PNG images
+- **Non-destructive**: Original files are never modified - creates new files with "_modified" suffix
+- **Modern UI**: Clean white interface with intuitive controls
+- **Auto folder opening**: Automatically opens the output folder after processing
 
-## Requirements
+## 🖼️ Supported Image Formats
+
+- JPEG (.jpg, .jpeg)
+- PNG (.png) - with transparency support
+- BMP (.bmp)
+- TIFF (.tiff)
+- WebP (.webp)
+
+## 📋 Requirements
 
 - Python 3.6 or higher
 - Pillow (PIL) library
+- tkinter (usually included with Python)
 
-## Installation
+## 🚀 Installation
 
-1. Make sure you have Python installed on your system
-2. Install the required dependencies:
+1. **Clone or download** this repository
+2. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
@@ -28,57 +40,61 @@ A Python GUI application that adds parental advisory explicit logos to album cov
    pip install Pillow
    ```
 
-## Usage
+## 🎯 Usage
 
-1. **Run the program**:
+1. **Run the application**:
    ```bash
    python adder.py
    ```
 
-2. **Select a folder** containing your album cover images using the "Browse" button
+2. **Select images**: Click "Browse Files" to select one or more image files
 
-3. **Choose logo position**:
-   - Bottom Left
-   - Bottom Middle  
-   - Bottom Right
+3. **Configure settings**:
+   - **Position**: Choose Bottom Left, Bottom Middle, or Bottom Right
+   - **Logo Width**: Adjust size using the slider (50-200 pixels)
+   **Crop Mode**: 
+     - "Crop to Center": Crops image to square from center
+     - "Stretch to Square": Stretches image to square (may distort)
 
-4. **Adjust logo size** using the slider (50-200 pixels)
+4. **Preview**: The preview updates automatically as you change settings
 
-5. **Preview the result** using the "Update Preview" button
+5. **Process**: Click "Process Images" to add logos to all selected images
 
-6. **Process images** by clicking "Process Images"
-
-## Supported Image Formats
-
-- JPEG (.jpg, .jpeg)
-- PNG (.png)
-- BMP (.bmp)
-- TIFF (.tiff)
-- WebP (.webp)
-
-## Important Notes
-
-- **Backup**: Original files are automatically backed up with '_original' suffix before modification
-- **Logo file**: The program requires `paec.png` to be in the same directory as the script
-- **Batch processing**: All images in the selected folder will be processed
-- **Confirmation**: You'll be asked to confirm before processing begins
-
-## File Structure
+## 📁 File Structure
 
 ```
-batch parental/
-├── adder.py                    # Main program
-├── paec.png                    # Parental advisory logo
+parental-advisory-adder/
+├── adder.py                    # Main application
+├── parental.png                # Parental advisory logo
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 ```
 
-## Example
+## 🔧 How It Works
 
-1. Place your album cover images in a folder
-2. Run the program and select that folder
-3. Choose "Bottom Right" position and size 120 pixels
-4. Preview the result
-5. Click "Process Images" to apply the logo to all images
+- **Original files are never modified** - new files are created with "_modified" suffix
+- **Transparency is preserved** - PNG images with transparency remain transparent
+- **Live preview** shows exactly what the final result will look like
+- **Progress tracking** shows processing status for batch operations
+- **Auto folder opening** - after processing, the output folder opens automatically
 
-The program will create backups of your original files and add the parental advisory logo to each image in the selected position. 
+## 💡 Tips
+
+- Use "Crop to Center" for best results with rectangular images
+- Use "Stretch to Square" if you need consistent square output
+- PNG format preserves transparency best
+- The preview shows exactly what you'll get in the final image
+
+## 🐛 Troubleshooting
+
+- **Logo not appearing**: Make sure `parental.png` is in the same directory as `adder.py`
+- **Permission errors**: Ensure you have write permissions in the output directory
+- **Image format issues**: Try converting problematic images to PNG or JPEG first
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Feel free to submit issues, feature requests, or pull requests to improve this tool! 
