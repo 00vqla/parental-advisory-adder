@@ -9,7 +9,15 @@ class ParentalAdvisoryAdder:
     def __init__(self, root):
         self.root = root
         self.root.title("Parental Advisory Adder")
-        self.root.geometry("600x500")
+        
+        # Set default window size and make it resizable
+        self.root.geometry("600x900")
+        self.root.minsize(500, 400)  # Minimum window size
+        self.root.resizable(True, True)  # Allow resizing both width and height
+        
+        # Center the window on screen
+        self.center_window()
+        
         self.root.configure(bg="white")
 
         # Set ttk style for a clean white look
@@ -39,6 +47,15 @@ class ParentalAdvisoryAdder:
             return
         
         self.setup_ui()
+
+    def center_window(self):
+        """Center the window on the screen"""
+        self.root.update_idletasks()
+        width = self.root.winfo_width()
+        height = self.root.winfo_height()
+        x = (self.root.winfo_screenwidth() // 2) - (width // 2)
+        y = (self.root.winfo_screenheight() // 2) - (height // 2)
+        self.root.geometry(f'{width}x{height}+{x}+{y}')
 
     def setup_ui(self):
         # File selection
