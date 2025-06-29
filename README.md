@@ -4,11 +4,14 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 
 ---
 
-![App Preview](showcase/preview.png)
-*Main application window with live preview*
+<p align="center">
+  <img src="showcase/preview.png" alt="App Preview" width="300"/>
+  <img src="showcase/result.png" alt="Result Example" width="300"/>
+</p>
 
-![Result Example](showcase/result.png)
-*Example of a processed image with the Parental Advisory logo*
+<p align="center">
+  <em>Main application window with live preview (left) and example of a processed image (right)</em>
+</p>
 
 ---
 
