@@ -24,7 +24,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 - **Adjustable logo size**: 50-200 pixels with real-time preview
 - **Live preview**: See exactly how the logo will appear before processing
 - **Batch processing**: Process multiple images at once with progress tracking
-- **Crop modes**: Choose between "Crop to Center" or "Stretch to Square"
+- **Crop modes**: "Crop to Center" & "Stretch to Square"
 - **Transparency support**: Preserves transparency in PNG images
 
 ## 🖼️ Supported Image Formats
@@ -57,7 +57,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 
 1. **Run the application**:
    ```bash
-   pytho3 adder.py
+   python3 adder.py
    ```
 
 2. **Select images**: Click "Browse Files" to select one or more image files
@@ -67,9 +67,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
    - **Logo Width**: Adjust size using the slider (50-200 pixels)
    **Crop Mode**: 
      - "Crop to Center": Crops image to square from center
-     - "Stretch to Square": Stretches image to square (may distort)
-
-4. **Preview**: The preview updates automatically as you change settings
+     - "Stretch to Square": Stretches image to square
 
 ## 📁 File Structure
 
@@ -78,16 +76,13 @@ parental-advisory-adder/
 ├── adder.py                    # Main application
 ├── parental.png                # Parental advisory logo
 ├── requirements.txt            # Python dependencies
-└── README.md                   # This file
+└── README.md                   # Ts
 ```
 
 ## 🔧 How It Works
 
 - **Original files are never modified** - new files are created with "_modified" suffix
 - **Transparency is preserved** - PNG images with transparency remain transparent
-- **Live preview** shows exactly what the final result will look like
-- **Progress tracking** shows processing status for batch operations
-- **Auto folder opening** - after processing, the output folder opens automatically
 
 ## 📄 License
 
