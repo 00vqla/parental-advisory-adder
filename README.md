@@ -1,6 +1,6 @@
 # Parental Advisory Logo Adder
 
-A Python GUI application that adds parental advisory explicit logos to album covers and images. Features a clean, modern interface with live preview and batch processing capabilities.
+A Python GUI application that adds parental advisory explicit logos to album covers and images.
 
 ## ✨ Features
 
@@ -10,9 +10,6 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 - **Batch processing**: Process multiple images at once with progress tracking
 - **Crop modes**: Choose between "Crop to Center" or "Stretch to Square"
 - **Transparency support**: Preserves transparency in PNG images
-- **Non-destructive**: Original files are never modified - creates new files with "_modified" suffix
-- **Modern UI**: Clean white interface with intuitive controls
-- **Auto folder opening**: Automatically opens the output folder after processing
 
 ## 🖼️ Supported Image Formats
 
@@ -44,7 +41,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 
 1. **Run the application**:
    ```bash
-   python adder.py
+   pytho3 adder.py
    ```
 
 2. **Select images**: Click "Browse Files" to select one or more image files
