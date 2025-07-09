@@ -18,7 +18,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multiple positioning options**: Bottom Left, Bottom Middle, Bottom Right
 - **Adjustable logo size**: 50-200 pixels with real-time preview
@@ -27,7 +27,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 - **Crop modes**: "Crop to Center" & "Stretch to Square"
 - **Transparency support**: Preserves transparency in PNG images
 
-## 🖼️ Supported Image Formats
+## Supported Image Formats
 
 - JPEG (.jpg, .jpeg)
 - PNG (.png) - with transparency support
@@ -35,13 +35,13 @@ A Python GUI application that adds parental advisory explicit logos to album cov
 - TIFF (.tiff)
 - WebP (.webp)
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.6 or higher
 - Pillow (PIL) library
 - tkinter (usually included with Python)
 
-## 🚀 Installation
+## Installation
 
 1. **Clone or download** this repository
 2. **Install dependencies**:
@@ -53,7 +53,7 @@ A Python GUI application that adds parental advisory explicit logos to album cov
    pip install Pillow
    ```
 
-## 🎯 Usage
+## Usage
 
 1. **Run the application**:
    ```bash
@@ -79,15 +79,7 @@ parental-advisory-adder/
 └── README.md                   # Ts
 ```
 
-## 🔧 How It Works
+## How It Works
 
 - **Original files are never modified** - new files are created with "_modified" suffix
 - **Transparency is preserved** - PNG images with transparency remain transparent
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🤝 Contributing
-
-Feel free to submit issues, feature requests, or pull requests to improve this tool! 
