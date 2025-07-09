@@ -1,4 +1,4 @@
-# Parental Advisory Logo Adder
+# py-explicit-tag
 
 A python app to add Parental Advisory labels to images
 
