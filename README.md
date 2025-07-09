@@ -1,6 +1,6 @@
 # Parental Advisory Logo Adder
 
-A Python GUI application that adds parental advisory explicit logos to album covers and images. 
+A python app to add Parental Advisory labels to images
 
 ---
 
